@@ -33,6 +33,12 @@ async function getSpreadSheetValues({ spreadsheetId, sheetName }) {
   return res;
 }
 
+// TO-DO: Implement this function
+async function getSpreadSheetHighlightColor({ spreadsheetId, sheetName }) {
+  const auth = await getAuthToken();
+  const res = await fetchhttps://sheets.googleapis.com/v4/spreadsheets/YOUR_SPREADSHEET_ID?includeGridData=true&ranges=B1&key={YOUR_API_KEY}
+}
+
 module.exports = {
   getAuthToken,
   getSpreadSheet,
